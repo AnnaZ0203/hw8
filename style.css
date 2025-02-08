@@ -45,3 +45,48 @@ li.first-child{
     font-weight:bold
 }
 
+
+.transform{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 10%;
+    background-color: greenyellow;
+
+   /* transition-property: border-radius;
+    /*що саме анімуємо*
+    transition-duration: 400ms;
+    /*скільки саме триватимиме перехід (0.4 0.5 )
+    transition-timing-function:  cubic-bezier();
+    /* розподіл  часу 
+    transition-delay: 0.1s;
+    /*затримка переходу якщо потрібно*/
+
+    transition: border-radius 0.4s cubic-bezier(.13,.89,.64,.71) 0.1s,   background-color 0.4s cubic-bezier(.13,.89,.64,.71) 0.1s;
+}
+
+.transform:hover{
+    background-color: grey;
+    border-radius: 50%;
+}
+
+
+.div{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(58, 90, 184, 0.504);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform 2d transformacia*/
+    transform: translate(-50%, -50%);
+    /*translate chenges місце of the element on the screen vidnosno yogo zbichnogo if presentage than from its znachen*/
+    transition: transform 0.3s cubic-bezier(.13,.89,.64,.71) 0.1s;
+}
+.div:hover{
+    transform: translate(-50%, -50%) rotate(45deg);
+    /*transform: scale(1,2); збільшує/ зменьшує*/
+    /*transform: rotate(45deg); поворот , -45 other side turn*/
+   
+
+}
